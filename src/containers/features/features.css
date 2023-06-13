@@ -1,0 +1,130 @@
+.gpt3__features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+
+.gpt3__features-heading {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+  margin-right: 5rem;
+}
+
+.gpt3__features-heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+
+  margin-bottom: 2rem;
+}
+.gpt3__features-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ff8a71;
+}
+
+.gpt3__features-container {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.gpt3__features-container
+  .gpt3__whatGPT3__features-container__feature
+  .gpt3__whatGPT3__features-container__feature-title
+  h1 {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.gpt3__features-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gpt3__features-item h4 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.gpt3__features-detail-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gpt3__features-detail-wrapper span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+  .gpt3__features-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gpt3__features-item-wrapper {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gpt3__features-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gpt3__features-container .gpt3__whatGPT3__features-container__feature {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3__features-heading {
+    margin-right: 0;
+  }
+
+  .gpt3__features-heading h1 {
+    font-size: 24px;
+    line-height: 32px;
+
+    margin-bottom: 1rem;
+  }
+  .gpt3__features-heading p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .gpt3__features-container
+    .gpt3__whatGPT3__features-container__feature
+    .gpt3__whatGPT3__features-container__feature-title
+    h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gpt3__features-container {
+    padding-top: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .gpt3__features-detail-wrapper span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

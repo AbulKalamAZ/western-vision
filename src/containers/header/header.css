@@ -1,0 +1,154 @@
+.wv__header {
+  position: relative;
+}
+
+.wv__header-video {
+  width: 100%;
+  height: auto;
+}
+
+.wv__header-content {
+  position: absolute;
+  top: 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff9d;
+  backdrop-filter: blur(2px);
+}
+
+.wv__header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  color: var(--primary);
+}
+
+.wv__header-content p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--primary);
+
+  margin-top: 1.5rem;
+  padding-right: 4rem;
+}
+
+.wv__header-content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+}
+
+.wv__header-content__input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 1rem;
+  background: var(--accent);
+  border-radius: 4px;
+
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.wv__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wv__header-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* For devices smaller than 1050px */
+
+@media screen and (max-width: 1050px) {
+  .wv__header {
+    flex-direction: column;
+  }
+
+  .wv__header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+/* For devices smaller than 700px */
+
+@media screen and (max-width: 700px) {
+  .wv__header h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .wv__header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .wv__header-content__input input,
+  .wv__header-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .wv__header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+/* For devices smaller than 550px */
+
+@media screen and (max-width: 550px) {
+  .wv__header-content {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-radius: 8px;
+  }
+
+  .wv__header-content h1 {
+    width: 100%;
+    text-align: center;
+
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .wv__header-content p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0;
+    margin-top: 1rem;
+  }
+
+  .wv__header-content__input {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .wv__header-content__input button {
+    flex: 0.5 1;
+    min-height: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
