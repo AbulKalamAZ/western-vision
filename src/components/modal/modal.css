@@ -1,0 +1,92 @@
+.dialog-overlay {
+  backdrop-filter: blur(4px);
+}
+
+.dialog-content {
+  width: 100%;
+  max-width: 650px;
+  font-family: var(--font-family);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.close-button:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-body {
+  margin-top: 2.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-family);
+}
+
+.contact-form input[type="text"]:focus-visible {
+  outline: var(--accent) auto 1px;
+}
+.contact-form input[type="email"]:focus-visible {
+  outline: var(--accent) auto 1px;
+}
+.contact-form textarea:focus-visible {
+  outline: var(--accent) auto 1px;
+}
+.contact-form button {
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--accent);
+  font-family: var(--font-family);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #d57815;
+}

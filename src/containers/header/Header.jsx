@@ -4,7 +4,7 @@ import constructionSite from "../../assets/construction-site-video.mp4";
 import { Navbar } from "../../components";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ openModal }) => {
   return (
     <div className="wv__header" id="home">
       <div className="wv__header-video-container">
@@ -27,7 +27,9 @@ const Header = () => {
         </p>
 
         <div className="wv__header-content__input">
-          <button type="button">Request for a quotation</button>
+          <button type="button" onClick={openModal}>
+            Request for a quotation
+          </button>
         </div>
       </div>
     </div>

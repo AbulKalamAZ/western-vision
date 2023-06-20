@@ -1,7 +1,7 @@
 import React from "react";
 import "./cta.css";
 
-const CTA = () => {
+const CTA = ({ openModal }) => {
   return (
     <div className="gpt3__cta section__margin" id="contact">
       <div className="gpt3__cta-content">
@@ -11,7 +11,9 @@ const CTA = () => {
         </h2>
       </div>
       <div className="gpt3__cta-btn">
-        <button type="button">Contact Us</button>
+        <button type="button" onClick={openModal}>
+          Contact Us
+        </button>
       </div>
     </div>
   );

@@ -16,7 +16,13 @@ const Possibility = () => {
           forward to the opportunity to work with you
         </p>
 
-        <button type="button">Company Profile</button>
+        <a
+          className="download-btn"
+          href="https://download1478.mediafire.com/0i2p38fjaiogJnFqviFCTJQYuQSPl98ZENzDdlIsPu4xT-NsZ0WTmrz8S9BiciwJ07tMNcwk92KaHST2BjS5ej_VjiOimzMXiSon9hEYtZTZa34ZODNnR8VJwXNYUZX9QZS2oxbLtD08E4VzI4f7zlv8KC4kzuzPx8Y3m6WcKdhduyrn/7k8x4dpkh1ddfg7/Western+Vision+Company+Profile+%281%29.pdf"
+          download="download"
+        >
+          Download Company Profile
+        </a>
       </div>
 
       <div className="gpt3__possibility-image">
